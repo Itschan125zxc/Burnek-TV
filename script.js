@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 	
 
    function populateChannels() {
+   channelListElement.innerHTML = '';
 
     // Track seen channels
     let seenChannels = new Set();
