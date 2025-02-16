@@ -163,6 +163,16 @@
             </div>
             <div class="shaka-text-container" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-end;"></div>
         </div>
+        <div class="channel-list">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search channels..." onkeyup="searchChannels()">
+            </div>
+            <ul id="channelList">
+                <li class="active">ACC NETWORK</li>
+                <li>ANC</li>
+                </ul>
+        </div>
+        <script src="channel.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
