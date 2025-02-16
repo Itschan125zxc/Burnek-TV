@@ -160,3 +160,41 @@ video {
   color: #EAEAEA;
   transform: scale(0.95);
 }
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1a1a1a; /* Dark background */
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #ddd; /* Light text */
+}
+
+.search-input::placeholder {
+  color: #777; /* Subtle placeholder */
+}
+
+.search-button {
+  padding: 12px 18px;
+  border: none;
+  background-color: #ff7b00; /* Premium accent color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-button:hover {
+  background-color: #cc6200;
+  transform: scale(1.05); /* Subtle hover effect */
+}
