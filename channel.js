@@ -400,5 +400,107 @@ const channels = [
         "src": "https://ni.bobay.workers.dev/1243/manifest.mpd",
         "key": "31363331313738363633373739363234:5436395534576f7638744a43356d336e",
         "drm": "clearKey"
+    },
+    {
+        "name": "TAP ACTION FLIX",
+        "src": "https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapactionflix_hd1.mpd",
+        "key": "bee1066160c0424696d9bf99ca0645e3:f5b72bf3b89b9848de5616f37de040b7",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TAP MOVIES",
+        "src": "https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapmovies_hd1.mpd",
+        "key": "71cbdf02b595468bb77398222e1ade09:c3f2aa420b8908ab8761571c01899460",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TAP SPORTS",
+        "src": "https://ni.bobay.workers.dev/1151/manifest.mpd",
+        "key": "31363233303437333337383938393931:4344324b7661386b4579323633343645",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TELERADYO SERBISYO",
+        "src": "https://d14c00opfjb50c.cloudfront.net/out/v1/0fa4eb67579d41cca4ed146c93aa855f/index.mpd",
+        "key": "47c093e0c9fd4f80839a0337da3dd876:50547394045b3d047dc7d92f57b5fb33",
+        "drm": "clearKey"
+    },
+    {
+        "name": "THRILL",
+        "src": "https://ni.bobay.workers.dev/1253/manifest.mpd",
+        "key": "31363331313938333434383133383337:32776734365267686977387049356d48",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TLC",
+        "src": "https://ni.bobay.workers.dev/1181/manifest.mpd",
+        "key": "31363233323239363937303432353735:39574d333277376f336d374244323159",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TMC",
+        "src": "https://qp-pldt-live-grp-07-prod.akamaized.net/out/u/cg_tagalogmovie.mpd",
+        "key": "96701d297d1241e492d41c397631d857:ca2931211c1a261f082a3a2c4fd9f91b",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TRUE FM TV",
+        "src": "https://qp-pldt-live-grp-08-prod.akamaized.net/out/u/truefm_tv.mpd",
+        "key": "0559c95496d44fadb94105b9176c3579:40d8bb2a46ffd03540e0c6210ece57ce",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TV 5",
+        "src": "https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5_hd.mpd",
+        "key": "2615129ef2c846a9bbd43a641c7303ef:07c7f996b1734ea288641a68e1cfdc4d",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TVN",
+        "src": "https://qp-pldt-live-grp-09-prod.akamaized.net/out/u/cg_tvnpre.mpd",
+        "key": "e1bde543e8a140b38d3f84ace746553e:b712c4ec307300043333a6899a402c10",
+        "drm": "clearKey"
+    },
+    {
+        "name": "TVN MOVIES",
+        "src": "https://qp-pldt-live-grp-07-prod.akamaized.net/out/u/cg_tvnmovie.mpd",
+        "key": "2e53f8d8a5e94bca8f9a1e16ce67df33:3471b2464b5c7b033a03bb8307d9fa35",
+        "drm": "clearKey"
+    },
+    {
+        "name": "UAAP",
+        "src": "https://qp-pldt-live-grp-04-prod.akamaized.net/out/u/cg_uaap_cplay_sd.mpd",
+        "key": "95588338ee37423e99358a6d431324b9:6e0f50a12f36599a55073868f814e81e",
+        "drm": "clearKey"
+    },
+    {
+        "name": "UNIFI",
+        "src": "https://unifi-live07.secureswiftcontent.com/UnifiHD/live11.mpd",
+        "key": "b6bd9264f24444c9a1bea842ba0bc33d:00c737b67ab210796510463a99b0b00d",
+        "drm": "clearKey"
+    },
+    {
+        "name": "UNTV",
+        "src": "https://ni.bobay.workers.dev/1091/manifest.mpd",
+        "key": "31363231393131383734323234313831:7a333137597652656743393372427153",
+        "drm": "clearKey"
+    },
+    {
+        "name": "USA EAST",
+        "src": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-east)/master.mpd",
+        "key": "78ab64fa90f137a697743b5dc27b2f96:de4d31c7fc6005ede28abab2a0720a9f",
+        "drm": "clearKey"
+    },
+    {
+        "name": "VIVA CINEMA",
+        "src": "https://cnvg.katir.workers.dev/1079/manifest.mpd",
+        "key": "31363230393830353534303039353831:506e354374394938446439344b6f3741",
+        "drm": "clearKey"
+    },
+    {
+        "name": "WARNER TV",
+        "src": "https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_warnertvhd.mpd",
+        "key": "4503cf86bca3494ab95a77ed913619a0:afc9c8f627fb3fb255dee8e3b0fe1d71",
+        "drm": "clearKey"
     }
 ];
