@@ -391,7 +391,7 @@ const channels = [
     },
     {
     "name": "SONY PIX",
-        "src": "https://familyip.vip/IN_SPIX/index.m3u8",
+        "src": "http://familyip.vip/IN_SPIX/index.m3u8",
         "key": "",
         "drm": ""
     }
