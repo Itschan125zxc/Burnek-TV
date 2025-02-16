@@ -186,6 +186,8 @@ video {
 }
 
 .search-input::placeholder {
+  width: 100%;
+  max-width: 500px;
   color: #777; /* Subtle placeholder */
 }
 
