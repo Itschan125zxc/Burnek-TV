@@ -176,6 +176,8 @@ video {
   flex: 1;
   border: none;
   padding: 12px;
+  width: 100%;
+  max-width: 500px;
   font-size: 16px;
   outline: none;
   background-color: #1a1a1a;
