@@ -1,14 +1,392 @@
 const channels = [
     {
-        "name": "ACC NETOWORK",
-        "src": "http://fl2.moveonjoy.com/ACC_NETWORK/index.m3u8",
-        "key": null,
-        "drm": "widevine"
-    },
-    {
         "name": "ANC",
         "src": "https://ni.bobay.workers.dev/1216/manifest.mpd",
         "key": "31363234353837393638333931313738:335a493259306157495a557356494b44",
         "drm": "clearKey"
+    },
+    {
+        "name": "ANIMAL PLANET",
+        "src": "https://ni.bobay.workers.dev/1335/manifest.mpd",
+        "key": "31363735313439343038343136333130:386c6b6a64704d4d3039354d4e6a6933",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ANIMAX",
+        "src": "https://tglmp01.akamaized.net/out/v1/de55fad9216e4fe7ad8d2eed456ba1ec/manifest.mpd",
+        "key": "edf1a715de9748638dd2fad75a419af2:2f5a3199b26e9b693ae881af7ff864cf",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ASIAN FOOD NETWORK",
+        "src": "https://ni.bobay.workers.dev/1342/manifest.mpd",
+        "key": "31363735313536373634343534323132:71504433773565593837796d68613333",
+        "drm": "clearKey"
+    },
+    {
+        "name": "AXN",
+        "src": "https://cnvg.katir.workers.dev/1182/manifest.mpd",
+        "key": "31363233323239393136303432373230:3132373248597249506d6e31326c3246",
+        "drm": "clearKey"
+    },
+    {
+        "name": "BBC EARTH",
+        "src": "https://qp-pldt-live-grp-03-prod.akamaized.net/out/u/cg_bbcearth_hd1.mpd",
+        "key": "34ce95b60c424e169619816c5181aded:0e2a2117d705613542618f58bf26fc8e",
+        "drm": "clearKey"
+    },
+    {
+        "name": "BBC LIFESTYLE",
+        "src": "https://qp-pldt-live-grp-09-prod.akamaized.net/out/u/cg_bbclifestyle.mpd",
+        "key": "34880f56627c11ee8c990242ac120002:c23677c829bb244b79a3dc09ffd88ca0",
+        "drm": "clearKey"
+    },
+    {
+        "name": "BUKO",
+        "src": "https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_buko_sd.mpd",
+        "key": "d273c085f2ab4a248e7bfc375229007d:7932354c3a84f7fc1b80efa6bcea0615",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CARTOON NETWORK",
+        "src": "https://ni.bobay.workers.dev/1178/manifest.mpd",
+        "key": "31363233323238323938303333343430:536a4774797143315773693133654b73",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CARTOONITO",
+        "src": "https://cnvg.katir.workers.dev/1125/manifest.mpd",
+        "key": "31363232313038303239323888303638:7768354e65797950397a6c566d356256",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CELESTIAL CLASSIC MOVIES",
+        "src": "https://cnvg.katir.workers.dev/1244/manifest.mpd",
+        "key": "31363331313938313138383033383733:395334474d7735663579353235453534",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CELESTIAL MOVIES PINOY",
+        "src": "https://ni.bobay.workers.dev/1077/manifest.mpd",
+        "key": "31363230383933303132303032303231:6b5058557254355845335a6e63737030",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CINEMA ONE",
+        "src": "https://ni.bobay.workers.dev/1283/manifest.mpd",
+        "key": "31363331363736373234333532363730:684b6853695333444a6b345579376a61",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CINEMA MAX",
+        "src": "https://ni.bobay.workers.dev/1108/manifest.mpd",
+        "key": "31363232303137333630323534393638:63547a3159507a7036314e3357436c7a",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CINEMA WORLD",
+        "src": "https://cnvg.katir.workers.dev/1158/manifest.mpd",
+        "key": "31363233303438363730383939353239:356c3450446f61674435646b36563675",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CINEMO",
+        "src": "https://cnvg.katir.workers.dev/1254/manifest.mpd",
+        "key": "31363331363735393833333531383134:4a4f75336e6e30764575624855326937",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CNN INTERNATIONAL",
+        "src": "https://ni.bobay.workers.dev/1073/manifest.mpd",
+        "key": "31363230383933303132303032313231:6b5058557254355845335a6e63737030",
+        "drm": "clearKey"
+    },
+    {
+        "name": "CRIME + INVESTIGATION",
+        "src": "https://ni.bobay.workers.dev/1144/manifest.mpd",
+        "key": "31363232353335353435353432363238:684b3276585a37386130763047346a54",
+        "drm": "clearKey"
+    },
+    {
+        "name": "COMEDY CENTRAL",
+        "src": "https://cache1.zapitv.com/live/eds_c2/comedy_central/dash_live_enc/comedy_central.mpd",
+        "key": "f8757de5a495ce5db4893c2eefc11e58:d8309cd9fa8c286f277b4cb9841d7bd2",
+        "drm": "clearKey"
+    },
+    {
+        "name": "DISCOVERY CHANNEL",
+        "src": "https://cnvg.katir.workers.dev/1194/manifest.mpd",
+        "key": "31363233323330323736303433313938:6774487273654e4b313631333258706f",
+        "drm": "clearKey"
+    },
+    {
+        "name": "DREAMWORKS",
+        "src": "https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/cg_dreamworks_hd1.mpd",
+        "key": "4ab9645a2a0a47edbd65e8479c2b9669:8cb209f1828431ce9b50b593d1f44079",
+        "drm": "clearKey"
+    },
+    {
+        "name": "FIGHT SPORTS",
+        "src": "https://vision.seesie.workers.dev/fight-sports",
+        "key": "d2159ffe3be22ed4916a6abe4d58d265:3e4efcec08d5d5c18a403b7048a43638",
+        "drm": "clearKey"
+    },
+    {
+        "name": "GMA 7",
+        "src": "https://cnvg.katir.workers.dev/1093/manifest.mpd",
+        "key": "31363231383438333031323033393138:38694e34324d543478316b7455753437",
+        "drm": "clearKey"
+    },
+    {
+        "name": "GMA PINOY TV",
+        "src": "https://amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono-dzsx9.amagi.tv/index.mpd",
+        "key": "c95ed4c44b0b4f7fa1c6ebbbbaab21a1:47635b8e885e19f2ccbdff078c207058",
+        "drm": "clearKey"
+    },
+    {
+        "name": "GTV",
+        "src": "https://cnvg.katir.workers.dev/1143/manifest.mpd",
+        "key": "31363232353335323435353337353331:35416a68643065697575493337566135",
+        "drm": "clearKey"
+    },
+    {
+        "name": "HALLYPOP",
+        "src": "https://ni.bobay.workers.dev/1152/manifest.mpd",
+        "key": "31363233303437353134383939313936:686e36454a54544d3930343749713333",
+        "drm": "clearKey"
+    },
+    {
+        "name": "HBO",
+        "src": "https://ni.bobay.workers.dev/1065/manifest.mpd",
+        "key": "31363230383830323639303031323938:715a36614f62445635304852794b3676",
+        "drm": "clearKey"
+    },
+    {
+        "name": "HBO HITS",
+        "src": "https://qp-pldt-live-grp-09-prod.akamaized.net/out/u/cg_hbohits.mpd",
+        "key": "b04ae8017b5b4601a5a0c9060f6d5b7d:a8795f3bdb8a4778b7e888ee484cc7a1",
+        "drm": "clearKey"
+    },
+    {
+        "name": "HBO SIGNATURE",
+        "src": "https://qp-pldt-live-grp-01-prod.akamaized.net/out/u/cg_hbosign.mpd",
+        "key": "a06ca6c275744151895762e0346380f5:559da1b63eec77b5a942018f14d3f56f",
+        "drm": "clearKey"
+    },
+    {
+        "name": "HISTORY",
+        "src": "https://cnvg.katir.workers.dev/1074/manifest.mpd",
+        "key": "31363230383830323637303030383735:304d384b45573249714d6b7569675837",
+        "drm": "clearKey"
+    },
+    {
+        "name": "HITS",
+        "src": "https://qp-pldt-live-grp-04-prod.akamaized.net/out/u/hits_hd1.mpd",
+        "key": "dac605bc197e442c93f4f08595a95100:975e27ffc1b7949721ee3ccb4b7fd3e5",
+        "drm": "clearKey"
+    },
+    {
+        "name": "IBC 13",
+        "src": "https://qp-pldt-live-grp-07-prod.akamaized.net/out/u/ibc13_sd.mpd",
+        "key": "04e292bc99bd4ccba89e778651914254:ff0a62bdf8920ce453fe680330b563a5",
+        "drm": "clearKey"
+    },
+    {
+        "name": "INC TV",
+        "src": "https://ni.bobay.workers.dev/1092/manifest.mpd",
+        "key": "31363231393132323937323234333139:74516e7a4f3472713651316233425841",
+        "drm": "clearKey"
+    },
+    {
+        "name": "JEEPNEY TV",
+        "src": "https://cnvg.katir.workers.dev/1250/manifest.mpd",
+        "key": "31363331363735363832333531363036:723548436f6e34333961586150756649",
+        "drm": "clearKey"
+    },
+    {
+        "name": "KAPAMILYA CHANNEL",
+        "src": "https://wag.ika.lat/1286/manifest.mpd",
+        "key": "31363331363737343637333533323837:71347339457958556439543650426e74",
+        "drm": "clearKey"
+    },
+    {
+        "name": "KBS WORLD",
+        "src": "https://cnvg.katir.workers.dev/1353/manifest.mpd",
+        "key": "31363735373632313135333130303533:3473433831554435334e4a4567337952",
+        "drm": "clearKey"
+    },
+    {
+        "name": "KNOWLEDGE CHANNEL",
+        "src": "https://cnvg.katir.workers.dev/1340/manifest.mpd",
+        "key": "31363735313534353138343339333732:3970705738596631374f54324c384f57",
+        "drm": "clearKey"
+    },
+    {
+        "name": "LIFETIME",
+        "src": "https://cnvg.katir.workers.dev/1075/manifest.mpd",
+        "key": "31363230383830323639303031313938:715a36614f62445635304852794b3676",
+        "drm": "clearKey"
+    },
+    {
+        "name": "LIVING ASIA",
+        "src": "https://cnvg.katir.workers.dev/1154/manifest.mpd",
+        "key": "31363232363231343638363035363236:544962686d3165306836346e73673346",
+        "drm": "clearKey"
+    },
+    {
+        "name": "MOONBUG",
+        "src": "https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_moonbug_kids_sd.mpd",
+        "key": "0bf00921bec94a65a124fba1ef52b1cd:0f1488487cbe05e2badc3db53ae0f29f",
+        "drm": "clearKey"
+    },
+    {
+        "name": "MOTORVISION+",
+        "src": "https://ni.bobay.workers.dev/1245/manifest.mpd",
+        "key": "31363331313938383834383134323536:387938463676644f7141503474507435",
+        "drm": "clearKey"
+    },
+    {
+        "name": "MTV",
+        "src": "https://cache3.zapitv.com/live/eds_c2/mtv_espana/dash_live_enc/mtv_espana.mpd",
+        "key": "10f86eedfa603133e035c4c64226dd6b:1678761258b8a16d5d5b9241bd647536",
+        "drm": "clearKey"
+    },
+    {
+        "name": "MTV LIVE",
+        "src": "https://v4-vno-j13-cdn-01.live.cdn.cgates.lt/live/dash/560701/index.mpd",
+        "key": "1041d72f861c4e60a87a4e828250ded6:c75b1640bc83ec0c653902a775e5bb1a",
+        "drm": "clearKey"
+    },
+    {
+        "name": "MYX",
+        "src": "https://cnvg.katir.workers.dev/1252/manifest.mpd",
+        "key": "31363331363736333231333532323639:396c467233356c357355497565533536",
+        "drm": "clearKey"
+    },
+    {
+        "name": "NBA TV PHILIPPINES",
+        "src": "https://ni.bobay.workers.dev/1064/manifest.mpd",
+        "key": "31363230383932393934303031373831:36393034643046463738544b77676768",
+        "drm": "clearKey"
+    },
+    {
+        "name": "NET 25",
+        "src": "https://ni.bobay.workers.dev/1090/manifest.mpd",
+        "key": "31363231393131363337323232353030:56783536726130576e5a4171564c3741",
+        "drm": "clearKey"
+    },
+    {
+        "name": "NICKELODEON",
+        "src": "https://cnvg.katir.workers.dev/1313/manifest.mpd",
+        "key": "31363639393633373136353837383139:767561696f37546667306c7366623536",
+        "drm": "clearKey"
+    },
+    {
+        "name": "NICK JR.",
+        "src": "https://ni.bobay.workers.dev/1215/manifest.mpd",
+        "key": "31363233343133343534323335373438:75467735704170524847774a63594361",
+        "drm": "clearKey"
+    },
+    {
+        "name": "NICKTOONS",
+        "src": "https://v4-vno-j13-cdn-01.live.cdn.cgates.lt/live/dash/561208/index.mpd",
+        "key": "3161c6c45076419fbbc333c277a22f65:18827aad7e2e79e526f529fd5027cb47",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ONE NEWS",
+        "src": "https://qp-pldt-live-grp-04-prod.akamaized.net/out/u/onenews_hd1.mpd",
+        "key": "d39eb201ae494a0b98583df4d110e8dd:6797066880d344422abd3f5eda41f45f",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ONE PH",
+        "src": "https://qp-pldt-live-grp-04-prod.akamaized.net/out/u/oneph_sd.mpd",
+        "key": "92834ab4a7e1499b90886c5d49220e46:a7108d9a6cfcc1b7939eb111daf09ab3",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ONE SPORTS",
+        "src": "https://qp-pldt-live-grp-07-prod.akamaized.net/out/u/cg_onesports_hd.mpd",
+        "key": "53c3bf2eba574f639aa21f2d4409ff11:3de28411cf08a64ea935b9578f6d0edd",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ONE SPORTS+",
+        "src": "https://qp-pldt-live-grp-03-prod.akamaized.net/out/u/cg_onesportsplus_hd1.mpd",
+        "key": "322d06e9326f4753a7ec0908030c13d8:1e3e0ca32d421fbfec86feced0efefda",
+        "drm": "clearKey"
+    },
+    {
+        "name": "PBA RUSH",
+        "src": "https://qp-pldt-live-grp-01-prod.akamaized.net/out/u/cg_pbarush_hd1.mpd",
+        "key": "76dc29dd87a244aeab9e8b7c5da1e5f3:95b2f2ffd4e14073620506213b62ac82",
+        "drm": "clearKey"
+    },
+    {
+        "name": "PBO",
+        "src": "https://cnvg.katir.workers.dev/1078/manifest.mpd",
+        "key": "31363230393830323336303039323834:7676746b584436514331503256784654",
+        "drm": "clearKey"
+    },
+    {
+        "name": "PILIPINAS TV",
+        "src": "https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/cg_ptv4_sd.mpd",
+        "key": "71a130a851b9484bb47141c8966fb4a3:ad1f003b4f0b31b75ea4593844435600",
+        "drm": "clearKey"
+    },
+    {
+        "name": "PREMIER FOOTBALL",
+        "src": "https://cnvg.katir.workers.dev/1127/manifest.mpd",
+        "key": "31363232313130313238323933363838:3243794139594e6435434b517a497070",
+        "drm": "clearKey"
+    },
+    {
+        "name": "PREMIER SPORTS",
+        "src": "https://ni.bobay.workers.dev/1135/manifest.mpd",
+        "key": "31363232313130333638323933383631:7031306148395845396e32374369485a",
+        "drm": "clearKey"
+    },
+    {
+        "name": "PREMIER SPORTS 2",
+        "src": "https://ni.bobay.workers.dev/1204/manifest.mpd",
+        "key": "31363233383335303430363337303331:4444313067453278686a4b6b7030494b",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ROCK ACTION",
+        "src": "https://vision.seesie.workers.dev/rock-action",
+        "key": "b9c123fbf587e6524b2706bd960c7f67:d2aaac6845b33627cdce1272feac5acc",
+        "drm": "clearKey"
+    },
+    {
+        "name": "ROCK ENTERTAINMENT",
+        "src": "https://ni.bobay.workers.dev/1326/manifest.mpd",
+        "key": "31363735313536353539343439373937:535a566358303032677658776a413138",
+        "drm": "clearKey"
+    },
+    {
+        "name": "RPTV",
+        "src": "https://qp-pldt-live-grp-03-prod.akamaized.net/out/u/cnn_rptv_prod_hd.mpd",
+        "key": "1917f4caf2364e6d9b1507326a85ead6:a1340a251a5aa63a9b0ea5d9d7f67595",
+        "drm": "clearKey"
+    },
+    {
+        "name": "SARI SARI",
+        "src": "https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_sari_sari_sd.mpd",
+        "key": "0a7ab3612f434335aa6e895016d8cd2d:b21654621230ae21714a5cab52daeb9d",
+        "drm": "clearKey"
+    },
+    {
+        "name": "SOLAR FLIX",
+        "src": "https://ni.bobay.workers.dev/1243/manifest.mpd",
+        "key": "31363331313738363633373739363234:5436395534576f7638744a43356d336e",
+        "drm": "clearKey"
+    },
+    {
+        "name": "JUNGO PINOY TV",
+        "src": "https://jungotvstream.chanall.tv/jungotv/jungopinoytv/stream.m3u8",
+        "key": "",
+        "drm": ""
     }
 ];
