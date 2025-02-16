@@ -188,7 +188,7 @@ video {
 }
 
 .search-button {
-  width: 50px; /* Fixed width */
+  width: 100%; /* Fixed width */
   border: none;
   background-color: #ff7b00; /* Premium accent color */
   color: white;
