@@ -49,8 +49,8 @@ const channels = [
     },
     {
         "name": "CARTOON NETWORK",
-        "src": "https://ni.bobay.workers.dev/1178/manifest.mpd",
-        "key": "31363233323238323938303333343430:536a4774797143315773693133654b73",
+        "src": "https://qp-pldt-live-grp-12-prod.akamaized.net/out/u/dr_cartoonnetworkhd.mpd",
+        "key": "a2d1f552ff9541558b3296b5a932136b:cdd48fa884dc0c3a3f85aeebca13d444",
         "drm": "clearKey"
     },
     {
@@ -91,8 +91,8 @@ const channels = [
     },
     {
         "name": "CINEMO",
-        "src": "https://cnvg.katir.workers.dev/1254/manifest.mpd",
-        "key": "31363331363735393833333531383134:4a4f75336e6e30764575624855326937",
+        "src": "https://d1bail49udbz1k.cloudfront.net/out/v1/3a895f368f4a467c9bca0962559efc19/index.mpd",
+        "key": "aa8aebe35ccc4541b7ce6292efcb1bfb:aab1df109d22fc5d7e3ec121ddf24e5f",
         "drm": "clearKey"
     },
     {
@@ -157,8 +157,8 @@ const channels = [
     },
     {
         "name": "HBO",
-        "src": "https://ni.bobay.workers.dev/1065/manifest.mpd",
-        "key": "31363230383830323639303031323938:715a36614f62445635304852794b3676",
+        "src": "https://qp-pldt-live-grp-03-prod.akamaized.net/out/u/cg_hbohd.mpd",
+        "key": "d47ebabf7a21430b83a8c4b82d9ef6b1:54c213b2b5f885f1e0290ee4131d425b",
         "drm": "clearKey"
     },
     {
