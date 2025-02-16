@@ -388,5 +388,10 @@ const channels = [
         "src": "https://jungotvstream.chanall.tv/jungotv/jungopinoytv/stream.m3u8",
         "key": "",
         "drm": ""
+    },
+    "name": "SONY PIX",
+        "src": "https://familyip.vip/IN_SPIX/index.m3u8",
+        "key": "",
+        "drm": ""
     }
 ];
