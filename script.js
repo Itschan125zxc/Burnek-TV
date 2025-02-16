@@ -1,8 +1,26 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const videoElement = document.getElementById('video');
+    const pipButton = document.getElementById('pipButton');
     const channelListElement = document.getElementById('channelList');
     const videoContainer = document.getElementById('videoContainer');
 
+    // Hide PiP button if not supported
+    if (!document.pictureInPictureEnabled) {
+        pipButton.style.display = 'none';
+    }
+
+    // Picture-in-Picture button functionality
+    pipButton.addEventListener('click', () => {
+        if (document.pictureInPictureElement) {
+            document.exitPictureInPicture();
+        } else {
+            videoElement.requestPictureInPicture().catch(error => {
+                console.error('Error entering PiP mode: ', error);
+            });
+        }
+    });
+
+    // Initialize Shaka Player
     const player = new shaka.Player(videoElement);
     const ui = new shaka.ui.Overlay(player, videoContainer, videoElement);
 
@@ -10,8 +28,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         'overflowMenuButtons': ['quality', 'language', 'captions', 'playback_rate', 'cast']
     });
 
+    // Function to load channel
     async function loadChannel(channel) {
         videoElement.style.display = "block";
+        videoContainer.classList.add("active");
 
         if (!shaka.Player.isBrowserSupported()) {
             alert("Your browser does not support Shaka Player.");
@@ -27,4 +47,53 @@ document.addEventListener('DOMContentLoaded', async () => {
                     }
                 }
             });
+
+            await player.load(channel.src);
+            videoElement.play().catch(error => console.warn("Autoplay failed: User interaction needed", error));
+        } catch (error) {
+            console.error("Error loading video:", error);
+            alert("Error loading channel: " + channel.name);
+        }
+    }
 	
+	
+
+   function populateChannels() {
+    // Clear existing list before populating
+    channelListElement.innerHTML = '';
+
+    // Track seen channels
+    let seenChannels = new Set();
+
+    // Iterate through the channels in reverse to remove the first occurrence
+    for (let i = channels.length - 1; i >= 0; i--) {
+        if (seenChannels.has(channels[i].name)) {
+            channels.splice(i, 1); // Remove the first occurrence
+        } else {
+            seenChannels.add(channels[i].name);
+        }
+    }
+
+    // Populate the cleaned channel list
+    channels.forEach((channel) => {
+        const li = document.createElement('li');
+        li.textContent = channel.name;
+        li.onclick = () => {
+            document.querySelectorAll('.channel-list li').forEach(el => el.classList.remove('active'));
+            li.classList.add('active');
+            loadChannel(channel);
+        };
+        channelListElement.appendChild(li);
+    });
+}
+
+    function searchChannels() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        document.querySelectorAll('.channel-list li').forEach(channel => {
+            channel.style.display = channel.textContent.toLowerCase().includes(input) ? "list-item" : "none";
+        });
+    }
+
+    populateChannels();
+    window.searchChannels = searchChannels;
+});
