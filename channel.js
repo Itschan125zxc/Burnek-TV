@@ -3,7 +3,7 @@ const channels = [
         "name": "ACC NETOWORK",
         "src": "http://fl2.moveonjoy.com/ACC_NETWORK/index.m3u8",
         "key": null,
-        "drm": ""
+        "drm": "widevine"
     },
     {
         "name": "ANC",
