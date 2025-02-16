@@ -25,8 +25,8 @@ const channels = [
     },
     {
         "name": "AXN",
-        "src": "https://cnvg.katir.workers.dev/1182/manifest.mpd",
-        "key": "31363233323239393136303432373230:3132373248597249506d6e31326c3246",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2303/default_primary.mpd",
+        "key": "c24a7811d9ab46b48b746a0e7e269210:c321afe1689b07d5b7e55bd025c483ce",
         "drm": "clearKey"
     },
     {
@@ -55,14 +55,14 @@ const channels = [
     },
     {
         "name": "CARTOONITO",
-        "src": "https://cnvg.katir.workers.dev/1125/manifest.mpd",
-        "key": "31363232313038303239323888303638:7768354e65797950397a6c566d356256",
-        "drm": "clearKey"
+        "src": "https://cdn4.skygo.mn/live/disk1/Boomerang/HLS-FTA/Boomerang.m3u8",
+        "key": "",
+        "drm": ""
     },
     {
-        "name": "CELESTIAL CLASSIC MOVIES",
-        "src": "https://cnvg.katir.workers.dev/1244/manifest.mpd",
-        "key": "31363331313938313138383033383733:395334474d7735663579353235453534",
+        "name": "CELESTIAL MOVIES",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/506/default_primary.mpd",
+        "key": "c5c1ba26907291afec11a9a78d513410:361197805d0149c29801946cf2dde67c",
         "drm": "clearKey"
     },
     {
@@ -157,8 +157,8 @@ const channels = [
     },
     {
         "name": "HBO",
-        "src": "https://qp-pldt-live-grp-03-prod.akamaized.net/out/u/cg_hbohd.mpd",
-        "key": "d47ebabf7a21430b83a8c4b82d9ef6b1:54c213b2b5f885f1e0290ee4131d425b",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2304/default_primary.mpd",
+        "key": "a098896d2b11c5f3906a993c3ba5c610:f3f842c54cc96cbbd0bcb96a4cb8a813",
         "drm": "clearKey"
     },
     {
@@ -175,8 +175,8 @@ const channels = [
     },
     {
         "name": "HISTORY",
-        "src": "https://cnvg.katir.workers.dev/1074/manifest.mpd",
-        "key": "31363230383830323637303030383735:304d384b45573249714d6b7569675837",
+        "src": "https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_historyhd.mpd",
+        "key": "a7724b7ca2604c33bb2e963a0319968a:6f97e3e2eb2bade626e0281ec01d3675",
         "drm": "clearKey"
     },
     {
@@ -211,14 +211,14 @@ const channels = [
     },
     {
         "name": "KBS WORLD",
-        "src": "https://cnvg.katir.workers.dev/1353/manifest.mpd",
-        "key": "31363735373632313135333130303533:3473433831554435334e4a4567337952",
+        "src": "https://cnvg.katir.workers.dev/1286/manifest.mpd",
+        "key": "31363331363735363832333531363036:723548436f6e34333961586150756649",
         "drm": "clearKey"
     },
     {
         "name": "KNOWLEDGE CHANNEL",
-        "src": "https://cnvg.katir.workers.dev/1340/manifest.mpd",
-        "key": "31363735313534353138343339333732:3970705738596631374f54324c384f57",
+        "src": "https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_knowledgechannel.mpd",
+        "key": "0f856fa0412b11edb8780242ac120002:783374273ef97ad3bc992c1d63e091e7",
         "drm": "clearKey"
     },
     {
@@ -277,8 +277,8 @@ const channels = [
     },
     {
         "name": "NICKELODEON",
-        "src": "https://cnvg.katir.workers.dev/1313/manifest.mpd",
-        "key": "31363639393633373136353837383139:767561696f37546667306c7366623536",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2511/default_primary.mpd",
+        "key": "d8520e96a1283ab6e5be538474bfa810:bda5f7bbc1e44096f779a0619fe9881f",
         "drm": "clearKey"
     },
     {
@@ -325,8 +325,8 @@ const channels = [
     },
     {
         "name": "PBO",
-        "src": "https://cnvg.katir.workers.dev/1078/manifest.mpd",
-        "key": "31363230393830323336303039323834:7676746b584436514331503256784654",
+        "src": "https://qp-pldt-live-grp-04-prod.akamaized.net/out/u/pbo_sd.mpd",
+        "key": "dcbdaaa6662d4188bdf97f9f0ca5e830:31e752b441bd2972f2b98a4b1bc1c7a1",
         "drm": "clearKey"
     },
     {
