@@ -204,6 +204,12 @@ const channels = [
         "drm": "clearKey"
     },
     {
+        "name": "JUNGO PINOY TV",
+        "src": "https://jungotvstream.chanall.tv/jungotv/jungopinoytv/stream.m3u8",
+        "key": "",
+        "drm": ""
+    },
+    {
         "name": "KAPAMILYA CHANNEL",
         "src": "https://wag.ika.lat/1286/manifest.mpd",
         "key": "31363331363737343637333533323837:71347339457958556439543650426e74",
@@ -384,11 +390,6 @@ const channels = [
         "drm": "clearKey"
     },
     {
-        "name": "JUNGO PINOY TV",
-        "src": "https://jungotvstream.chanall.tv/jungotv/jungopinoytv/stream.m3u8",
-        "key": "",
-        "drm": ""
-    },
     "name": "SONY PIX",
         "src": "https://familyip.vip/IN_SPIX/index.m3u8",
         "key": "",
