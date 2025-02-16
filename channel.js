@@ -7,7 +7,7 @@ const channels = [
     },
     {
         "name": "ANIMAL PLANET",
-        "src": "http://linearjitp-playback.astro.com.my/dash-wv/linear/2710/default_primary.mpd",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2710/default_primary.mpd",
         "key": "d5199f1513a0286e038dae8f7d820010:4d4d4d9dc41be43f528a4940cf66f14c",
         "drm": "clearKey"
     },
@@ -193,7 +193,7 @@ const channels = [
     },
     {
         "name": "HITS MOVIES",
-        "src": "http://linearjitp-playback.astro.com.my/dash-wv/linear/2305/default_primary.mpd",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2305/default_primary.mpd",
         "key": "ff1febd7018d0dd711601e795e0d6210:38fbfb3a56e40ff92c9df8acbcba9ef6",
         "drm": "clearKey"
     },
@@ -271,7 +271,7 @@ const channels = [
     },
     {
         "name": "MTV LIVE",
-        "src": "http://linearjitp-playback.astro.com.my/dash-wv/linear/5014/default_primary.mpd",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/5014/default_primary.mpd",
         "key": "3ac2542a4f7be746633db07647451710:22f964a6d6927ccdba482e775cdff190",
         "drm": "clearKey"
     },
