@@ -1,282 +1,267 @@
+/* 🌙 Global Styles - Dark Pastel */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1B1B2F; /* Deep Dark Blue */
+    color: #EAEAEA; /* Soft White */
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
 }
 
+/* 🎨 Links */
 a {
-    color: white;
+    color: #A3BE8C; /* Soft Green */
+    text-decoration: none;
 }
 
 a:hover {
-    color: grey;
+    color: #D08770; /* Soft Warm Tone */
 }
 
+/* 🎬 Video Container */
 .video-container {
-  flex: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  position: relative;
-  background-image: url('https://i.imgur.com/ymBBhK9.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F0F1B; /* Darker Background */
+    position: relative;
+    background-image: url('https://i.imgur.com/ymBBhK9.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .video-container.active {
-  background: none;
+    background: none;
 }
 
-#video-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* 🎥 Video Player */
 video {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  aspect-ratio: 16 / 9;
-  display: none;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    aspect-ratio: 16 / 9;
+    display: none;
 }
 
+/* 📺 Channel List */
 .channel-list {
-  width: 400px;
-  background-color: #000;
-  overflow: hidden;
+    width: 400px;
+    background: rgba(37, 40, 54, 0.8);
+    backdrop-filter: blur(8px); /* Glassmorphism */
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .channel-list h2 {
-  padding: 10px;
-  margin: 0;
-  background-color: #000;
-  text-align: center;
+    padding: 12px;
+    margin: 0;
+    background: #222;
+    text-align: center;
+    color: #88C0D0; /* Soft Pastel Blue */
+    font-weight: bold;
 }
 
-.channel-list p {
-  padding: 5px;
-  margin: 0;
-  background-color: #000;
-  text-align: center;
-}
-
+/* 🔍 Search Bar */
 .search-container {
-  padding: 10px;
-  background-color: #000;
-  text-align: center;
+    padding: 12px;
+    background: transparent;
+    text-align: center;
 }
 
 #searchInput {
-  width: 90%;
-  padding: 8px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#searchInput:focus {
+    border-color: #88C0D0;
+    box-shadow: 0px 0px 8px rgba(136, 192, 208, 0.5);
+}
+
+/* 📜 Channel Items */
 .channel-list ul {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 .channel-list li {
-  background-color: #000;
-  color: white;
-  text-align: left;
-  padding: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  font-size: 16px;
-  font-weight: normal;
-  border-bottom: 1px solid #444;
+    background: rgba(255, 255, 255, 0.05);
+    color: #EAEAEA;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.channel-list li:hover {
+    background: #88C0D0;
+    color: #1B1B2F;
+    transform: scale(1.05);
 }
 
 .channel-list li.active {
-  background-color: #222 !important;
-  font-weight: bold;
-  color: #fff;
+    background: #BF616A; /* Pastel Red */
+    font-weight: bold;
+    color: #EAEAEA;
 }
 
+/* 🔐 Login Screen */
 #login-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
 
 .login-box {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 300px;
-  min-height: 180px;
+    background: #2E3440;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 320px;
 }
 
 .login-box input {
-  width: calc(100% - 16px);
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 .login-box button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  background-color: #555;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    background-color: #5E81AC;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
+.login-box button:hover {
+    background-color: #88C0D0;
+    transform: scale(1.05);
+}
+
+/* 📜 Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #111;
-  border-radius: 10px;
+    background: #1B1B2F;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #444;
-  border-radius: 10px;
+    background: #5E81AC;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #666;
+    background: #81A1C1;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #444 #111;
-}
-
+/* 📱 Responsive Design */
 @media screen and (max-width: 850px) {
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
+    body {
+        flex-direction: column;
+        height: 100vh;
+    }
 
-  ::-webkit-scrollbar-thumb {
-    background: #555;
-  }
+    .video-container {
+        width: 100%;
+        height: 40vh;
+        max-height: 360px;
+        flex: none;
+    }
 
-  .channel-list {
-    overflow-y: auto;
-    max-height: 60vh;
-  }
+    video {
+        width: 100%;
+        height: 100%;
+        max-height: 360px;
+    }
+
+    .channel-list {
+        width: 100%;
+        flex-grow: 1;
+        max-height: 60vh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #666;
-  }
-
-  .channel-list {
-    overflow-y: auto;
-    max-height: 50vh;
-  }
-}
-
-.video-container {
-  overflow: hidden;
-}
-
-.channel-list {
-  overflow-y: auto;
-}
-
-@media screen and (max-width: 850px) {
-  body {
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .video-container {
-    width: 100%;
-    height: 40vh;
-    max-height: 360px;
-    flex: none;
-  }
-
-  video {
-    width: 100%;
-    height: 100%;
-    max-height: 360px;
-  }
-
-  .channel-list {
-    width: 100%;
-    flex-grow: 1;
-    max-height: 60vh;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
+/* 🎮 Shaka Player Controls */
 .shaka-controls-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(30, 30, 46, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 
+/* 🖥️ Picture-in-Picture Button */
 .pip-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 8px 16px;
-  background-color: black;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 5;
-  display: block !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 5;
+    display: block !important;
+    transition: 0.3s ease-in-out;
 }
 
 .pip-button:hover {
-  background-color: #b2b2b2;
-  color: #fff;
+    background: #88C0D0;
+    color: #1B1B2F;
 }
