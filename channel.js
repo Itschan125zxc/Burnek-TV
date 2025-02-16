@@ -7,8 +7,8 @@ const channels = [
     },
     {
         "name": "ANIMAL PLANET",
-        "src": "https://ni.bobay.workers.dev/1335/manifest.mpd",
-        "key": "31363735313439343038343136333130:386c6b6a64704d4d3039354d4e6a6933",
+        "src": "http://linearjitp-playback.astro.com.my/dash-wv/linear/2710/default_primary.mpd",
+        "key": "d5199f1513a0286e038dae8f7d820010:4d4d4d9dc41be43f528a4940cf66f14c",
         "drm": "clearKey"
     },
     {
@@ -115,8 +115,8 @@ const channels = [
     },
     {
         "name": "DISCOVERY CHANNEL",
-        "src": "https://cnvg.katir.workers.dev/1194/manifest.mpd",
-        "key": "31363233323330323736303433313938:6774487273654e4b313631333258706f",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2510/default_primary.mpd",
+        "key": "276767a578aae2eacb284247ccd9eb10:03ef88df1a47669e5459e105e3b535b1",
         "drm": "clearKey"
     },
     {
@@ -162,6 +162,12 @@ const channels = [
         "drm": "clearKey"
     },
     {
+        "name": "HBO FAMILY",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2304/default_primary.mpd",
+        "key": "2b9ff7cc1a3dc9fef47cc5773472d510:7e37588e893ab9252e505bd6dda35beb",
+        "drm": "clearKey"
+    },
+    {
         "name": "HBO HITS",
         "src": "https://qp-pldt-live-grp-09-prod.akamaized.net/out/u/cg_hbohits.mpd",
         "key": "b04ae8017b5b4601a5a0c9060f6d5b7d:a8795f3bdb8a4778b7e888ee484cc7a1",
@@ -183,6 +189,12 @@ const channels = [
         "name": "HITS",
         "src": "https://qp-pldt-live-grp-04-prod.akamaized.net/out/u/hits_hd1.mpd",
         "key": "dac605bc197e442c93f4f08595a95100:975e27ffc1b7949721ee3ccb4b7fd3e5",
+        "drm": "clearKey"
+    },
+    {
+        "name": "HITS MOVIES",
+        "src": "http://linearjitp-playback.astro.com.my/dash-wv/linear/2305/default_primary.mpd",
+        "key": "ff1febd7018d0dd711601e795e0d6210:38fbfb3a56e40ff92c9df8acbcba9ef6",
         "drm": "clearKey"
     },
     {
@@ -259,8 +271,8 @@ const channels = [
     },
     {
         "name": "MTV LIVE",
-        "src": "https://v4-vno-j13-cdn-01.live.cdn.cgates.lt/live/dash/560701/index.mpd",
-        "key": "1041d72f861c4e60a87a4e828250ded6:c75b1640bc83ec0c653902a775e5bb1a",
+        "src": "http://linearjitp-playback.astro.com.my/dash-wv/linear/5014/default_primary.mpd",
+        "key": "3ac2542a4f7be746633db07647451710:22f964a6d6927ccdba482e775cdff190",
         "drm": "clearKey"
     },
     {
@@ -388,11 +400,5 @@ const channels = [
         "src": "https://ni.bobay.workers.dev/1243/manifest.mpd",
         "key": "31363331313738363633373739363234:5436395534576f7638744a43356d336e",
         "drm": "clearKey"
-    },
-    {
-    "name": "SONY PIX",
-        "src": "http://familyip.vip/IN_SPIX/index.m3u8",
-        "key": "",
-        "drm": ""
     }
 ];
