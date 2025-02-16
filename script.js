@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     const channelListElement = document.getElementById('channelList');
     const videoContainer = document.getElementById('videoContainer');
 
+    // Get video element
+    const video = document.getElementById('video');
+    const uiContainer = video.parentElement;
+
+    // Create UI Overlay
+    const ui = new shaka.ui.Overlay(shaka.Player, uiContainer, video);
+    const player = ui.getPlayer();
+
     // Hide PiP button if not supported
     if (!document.pictureInPictureEnabled) {
         pipButton.style.display = 'none';
