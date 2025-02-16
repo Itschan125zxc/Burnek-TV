@@ -131,3 +131,32 @@ video {
         flex-direction: column;
     }
 }
+
+.pip-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+  background-color: #5E81AC; /* Pastel Blue */
+  color: #EAEAEA; /* Light Text */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pip-button:hover {
+  background-color: #88C0D0; /* Light Cyan */
+  color: #1B1B2F; /* Dark Text for contrast */
+  transform: scale(1.05);
+}
+
+.pip-button:active {
+  background-color: #BF616A; /* Soft Red */
+  color: #EAEAEA;
+  transform: scale(0.95);
+}
