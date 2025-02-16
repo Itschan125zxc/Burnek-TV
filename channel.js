@@ -163,7 +163,7 @@ const channels = [
     },
     {
         "name": "HBO FAMILY",
-        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2304/default_primary.mpd",
+        "src": "https://linearjitp-playback.astro.com.my/dash-wv/linear/5053/default_primary.mpd",
         "key": "2b9ff7cc1a3dc9fef47cc5773472d510:7e37588e893ab9252e505bd6dda35beb",
         "drm": "clearKey"
     },
