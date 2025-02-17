@@ -164,47 +164,54 @@ video {
 .search-container {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 500px;
-  border: 1px solid #444; /* Darker border */
+  width: 400px; /* Same width as .channel-list */
+  height: auto; /* Ensures it matches the channel list height */
+  border: 1px solid #444;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #1a1a1a;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3); /* Same as .channel-list */
 }
 
 .search-input {
   flex: 1;
   border: none;
-  padding: 12px;
-  width: 100%;
-  max-width: 500px;
+  padding: 15px; /* Same as .channel-list li */
   font-size: 16px;
   outline: none;
   background-color: #1a1a1a;
-  color: #ddd; /* Light text */
-  height: 100%; /* Match height */
+  color: #ddd;
+  height: 100%;
 }
 
 .search-input::placeholder {
-  width: 100%;
-  max-width: 500px;
-  color: #777; /* Subtle placeholder */
+  color: #777;
 }
 
 .search-button {
-  width: 100%; /* Fixed width */
+  width: 120px; /* Adjust width to balance input */
+  height: 100%; /* Matches container height */
   border: none;
-  background-color: #ff7b00; /* Premium accent color */
+  background-color: #ff7b00;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  height: 100%; /* Ensures it matches the container height */
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .search-button:hover {
   background-color: #cc6200;
-  transform: scale(1.05); /* Subtle hover effect */
+  transform: scale(1.05);
 }
+
+/* 📱 Mobile Adjustments */
+@media screen and (max-width: 850px) {
+  .search-container {
+    width: 100%; /* Full width */
+  }
+}
+
