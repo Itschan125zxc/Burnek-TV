@@ -161,29 +161,6 @@ video {
   transform: scale(0.95);
 }
 
-.search-container {
-  display: flex;
-  align-items: center;
-  width: 400px; /* Same width as .channel-list */
-  height: auto; /* Ensures it matches the channel list height */
-  border: 1px solid #444;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #1a1a1a;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3); /* Same as .channel-list */
-}
-
-.search-input {
-  flex: 1;
-  border: none;
-  padding: 15px; /* Same as .channel-list li */
-  font-size: 16px;
-  outline: none;
-  background-color: #1a1a1a;
-  color: #ddd;
-  height: 100%;
-}
-
 .search-input::placeholder {
   color: #777;
 }
@@ -208,10 +185,21 @@ video {
   transform: scale(1.05);
 }
 
-/* 📱 Mobile Adjustments */
-@media screen and (max-width: 850px) {
-  .search-container {
-    width: 100%; /* Full width */
-  }
+.search-container {
+  padding: 10px;
+  background-color: #000;
+  text-align: center;
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+}
+
+#searchInput {
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #ddd;  
 }
 
